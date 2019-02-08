@@ -1,0 +1,13 @@
+version: '3.6'
+services:
+  applicative:
+    build: applicative/.
+    volumes:
+      - type: bind
+        source: ./applicative/
+        target: /opt/applicative/
+      - applicative_modules:/opt/applicative/node_modules
+
+volumes:
+  applicative_modules:
+    driver: local

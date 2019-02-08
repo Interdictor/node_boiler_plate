@@ -1,0 +1,4 @@
+FROM node:10.15.3
+
+ENV WORKPATH /opt/applicative/
+WORKDIR $WORKPATH

@@ -1,0 +1,16 @@
+{
+  "name": "boiler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "http-server": "*",
+    "jest": "*"
+  },
+  "scripts": {
+    "test": "jest ./test/ --config ./jest.config.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
