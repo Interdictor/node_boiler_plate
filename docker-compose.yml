@@ -1,13 +1,13 @@
 version: '3.6'
 services:
   applicative:
-    build: applicative/.
+    build: .
     volumes:
+      - modules:/opt/boiler/node_modules
       - type: bind
-        source: ./applicative/
-        target: /opt/applicative/
-      - applicative_modules:/opt/applicative/node_modules
+        source: .
+        target: /opt/boiler/
 
 volumes:
-  applicative_modules:
+  modules:
     driver: local
