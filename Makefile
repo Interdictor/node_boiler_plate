@@ -7,6 +7,12 @@ run:
 down:
 	docker-compose down
 
+bundle:
+	docker-compose run --rm boiler npm run bundle
+
+watch:
+	docker-compose run --rm boiler npm run watch
+
 lock:
 	docker-compose run --rm boiler npm install --lock
 
