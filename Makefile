@@ -1,4 +1,4 @@
-awake:
+up:
 	docker-compose up --build
 
 run:
