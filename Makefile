@@ -2,16 +2,16 @@ up:
 	docker-compose up --build
 
 run:
-	docker-compose run --rm applicative $(args)
+	docker-compose run --rm boiler $(args)
 
 down:
 	docker-compose down
 
 lock:
-	docker-compose run --rm applicative npm install --lock
+	docker-compose run --rm boiler npm install --lock
 
 test:
-	docker-compose run --rm applicative npm test
+	docker-compose run --rm boiler npm test
 
 logs:
 	docker-compose logs

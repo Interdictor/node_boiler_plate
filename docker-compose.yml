@@ -1,11 +1,11 @@
 version: '3.6'
 services:
-  applicative:
+  boiler:
     build:
       context: .
       target: dev
     volumes:
-      - modules:/opt/boiler/node_modules
+      - modules:/opt/app/node_modules
       - type: bind
         source: .
         target: /opt/app/
